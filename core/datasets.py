@@ -370,7 +370,7 @@ class MAASDataset(ContextualDataset):
             self.ts_to_entity.update(ts_ent)
 
     def __len__(self):
-        return int(len(self.feature_list)/20)
+        return int(len(self.feature_list)/1)
 
     def __getitem__(self, index):
         video_id, target_entity_id, center_ts = self.feature_list[index]
